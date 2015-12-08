@@ -1,0 +1,29 @@
+M-g g	11		  ;go to ligne
+TAB				  ;indent ligne
+M-g g	18		  ;go to ligne
+SPACE
+TAB
+M-g g	20		  ;ou bas - bas (plus rapide)?
+M-e				  ;se deplacer au dernier caractere
+C-k				  ;supprimer fin de ligne
+M-g g	17
+M-f				  ;avancer a la fin du prochain mot
+SPACE
+M-g g   3
+M-f
+SPACE
+M-g g 	5
+C-SPACE			  ;poser une marque pour selectionner le bloc
+M-g g   8
+C-w				  ;couper
+Mg-g	3
+->
+C-p				  ;go up
+RET
+C-y				  ;coller
+DELETE
+C-SPACE
+M-g g	3
+M-C-\
+C-c C-h			  ;header 42
+C-x s
